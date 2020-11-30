@@ -1,0 +1,26 @@
+{
+    "meta": {
+        "matchedPoliciesSummary": {
+            "high": 1,
+            "medium": 0,
+            "low": 0
+        },
+        "errorDetails": []
+    },
+    "data": [
+        {
+            "id": "e2a2f39e-1de6-4b14-802a-d6e6852490a6",
+            "attributes": {
+                "severity": "high",
+                "name": "Avoid running privileged containers",
+                "rule": "$.spec.template.spec.containers[*].securityContext.privileged any true",
+                "desc": "Ensure containers' privileged is false.",
+                "files": [
+                    "./k8s_valid_yaml_and_invalid_yaml_invalid_json/k8s_with_issues.yml"
+                ],
+                "policyId": "e2a2f39e-1de6-4b14-802a-d6e6852490a6",
+                "docUrl": "http://prisma.fyi/p105"
+            }
+        }
+    ]
+}
