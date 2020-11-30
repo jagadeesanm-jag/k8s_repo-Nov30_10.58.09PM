@@ -19,3 +19,5 @@ spec:
         image: nginx:1.14.2
         ports:
         - containerPort: 80
+
+# Modified [k8s_no_issues.yml] on [2020-11-30 22:58:30.110652]
